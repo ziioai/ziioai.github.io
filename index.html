@@ -4,10 +4,25 @@
 <head>
 <!-- --- -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
 <title>ZIIO AI</title>
+<meta property="description" content="Make rational AI products a reality.">
+<meta property="og:title" content="ZIIO AI">
+<meta property="og:description" content="Make rational AI products a reality.">
+<meta property="og:url" content="https://ziioai.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZIIO AI">
+<meta property="og:locale" content="en_US">
+
+<link rel="icon" type="image/x-icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.jpg">
+<meta property="og:image" content="https://ziioai.github.io/assests/ziioai-cover.png">
+<meta property="twitter:image" content="https://ziioai.github.io/assests/ziioai-cover.png">
+
 <!-- <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css" rel="stylesheet"> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <!-- --- -->
 <style>
 .page-cover {
@@ -16,6 +31,35 @@
   overflow: hidden;
   background: #eee;
   z-index: 99999;
+}
+.main-wrap {
+  background: #282828;
+}
+.main-hero-wrap {
+  height: 100vh;
+}
+.main-hero {
+  height: 100%;
+  /* background-color: var(--bs-gray-100); */
+  background: #222;
+  overflow: auto;
+}
+.color-fff {
+  color: #fff !important;
+}
+.main-app-icon {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 1rem auto;
+  border: 2px solid #fff;
+}
+:root, html, body {
+  /* background-color: var(--bs-gray-200); */
+  background: #282828;
+}
+.cursor-pointer{
+  cursor: pointer;
 }
 </style>
 <!-- --- -->
@@ -26,16 +70,34 @@
 <div class="app" id="app">
 <!-- --- -->
 
-<div class="page-cover" v-if="false"><div class="container pt-5 text-center">
+<div class="page-cover" v-if="false">
+  <div class="main-hero-wrap container py-2">
+    <div class="main-hero rounded d-flex align-items-center justify-content-center">
+      <div class="d-flex flex-column align-items-center justify-content-center">
+        <img src="/apple-touch-icon.png" alt="ziio-ai-icon" class="main-app-icon rounded">
+        <h1 class="fw-bold m-0 color-fff">ZIIO AI</h1>
+        <p class="fw-light text-secondary color-fff">Make rational AI products a reality.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="page-cover" v-if="false"><div class="container pt-5 text-center">
   <div class="row"><div><h2>ZIIO AI</h2></div></div>
   <div class="row"><div><p>loading...</p></div></div>
-</div></div>
+</div></div> -->
 
 
 <div class="main-wrap">
 
-  <div class="d-flex flex-column m-2 p-2 gap-2 rounded border text-secondary bg-secondary bg-opacity-10">
-    <h5 class="mb-0"><code>HELLO!</code></h5>
+  <div class="main-hero-wrap container py-2">
+    <div class="main-hero rounded d-flex align-items-center justify-content-center">
+      <div class="d-flex flex-column align-items-center justify-content-center cursor-pointer" @click="gogo()">
+        <img src="/apple-touch-icon.png" alt="ziio-ai-icon" class="main-app-icon rounded">
+        <h1 class="fw-bold m-0 color-fff">ZIIO AI</h1>
+        <p class="fw-light text-secondary ==color-fff">Make rational AI products a reality.</p>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -57,8 +119,14 @@ const MainApp = {
     const data = Vue.reactive({
       hello: "",
     });
+    const gogo = () => {
+      // 在新标签页打开 https://github.com/ziioai
+      const url = "https://github.com/ziioai";
+      window.open(url, "_blank");
+    };
     return {
       data,
+      gogo,
     };
   },
 };
