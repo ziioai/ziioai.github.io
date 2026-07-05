@@ -1,25 +1,25 @@
 # Docs
 
-- ZIIO AI
+- ZIIO AI: AI documentation platform
   - [Overview](/docs/ziio-ai): ZIIO AI section landing.
-- Products
+- Products: Product documentation & guides
   - [Overview](/docs/products): Products section.
-- Talent
+- Talent: Talent acquisition resources
   - [Overview](/docs/talent): Talent section.
-- Reading List
+- Reading List: Curated reading lists
   - [Overview](/docs/reading-list): Reading list section.
-- Financing
+- Financing: Financing documents & reports
   - [Overview](/docs/financing): Financing section.
 
 # Docs
 
-- ZIIO AI
+- ZIIO AI: AI 文档平台
   - [概览](/zh/docs/ziio-ai): ZIIO AI 板块落地页。
-- 产品
+- 产品: 产品文档与指南
   - [概览](/zh/docs/products): 产品板块。
-- 寻觅人才
+- 寻觅人才: 人才招聘资源
   - [概览](/zh/docs/talent): 寻觅人才板块。
-- 阅读清单
+- 阅读清单: 精选阅读列表
   - [概览](/zh/docs/reading-list): 阅读清单板块。
-- 融资
+- 融资: 融资文档与报告
   - [概览](/zh/docs/financing): 融资板块。
