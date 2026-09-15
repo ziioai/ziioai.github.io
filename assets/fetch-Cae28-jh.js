@@ -1,0 +1,1 @@
+import{t as e}from"./search-default-BRNLTTMS.js";export{e as fetchClient};

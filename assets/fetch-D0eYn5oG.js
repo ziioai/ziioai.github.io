@@ -1,1 +1,0 @@
-import{t as e}from"./search-default-CVWSSbIn.js";export{e as fetchClient};

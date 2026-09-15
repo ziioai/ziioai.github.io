@@ -1,1 +1,0 @@
-import{t as e}from"./search-default-Cli9XJ7y.js";export{e as fetchClient};
